@@ -12,4 +12,6 @@ displayName: Date format
 repository: https://github.com/a1528zhang/oomol-date-format
 platform:
   - os: ""
-releaseNotes: ""
+releaseNotes: |-
+  1. add icon for block
+  2. rename
