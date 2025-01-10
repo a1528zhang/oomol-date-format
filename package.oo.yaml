@@ -1,11 +1,15 @@
-version: 0.0.1
+version: 0.0.2
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
   bootstrap: |
     npm install
     pip install -r requirements.txt
-icon: ":twemoji:calendar:currentColor:"
+icon: ":twemoji:spiral-calendar:currentColor:"
 name: date-format
 description: Parse & format & split date.
-displayName: date format
+displayName: Date format
+repository: https://github.com/a1528zhang/oomol-date-format
+platform:
+  - os: ""
+releaseNotes: ""

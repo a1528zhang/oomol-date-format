@@ -61,3 +61,4 @@ outputs_def:
 title: Date format
 ui:
   default_width: 589.8467125163505
+icon: ":twemoji:spiral-calendar:"

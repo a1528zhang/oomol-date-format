@@ -4,13 +4,12 @@ nodes:
     node_id: date-format#1
     inputs_from:
       - handle: input
-        value: 1231231241444
+        value: 0
         schema_overrides:
           - ui:options:
               selected: 1
-            schema:
-              type: number
       - handle: outputFormat
         value: YYYY.MM.DD HH:mm:ss Z
       - handle: parseToUTC
         value: true
+    icon: ":twemoji:spiral-calendar:"
