@@ -1,0 +1,63 @@
+executor:
+  name: nodejs
+  options:
+    entry: main.js
+inputs_def:
+  - handle: input
+    json_schema:
+      anyOf:
+        - type: string
+        - type: integer
+      ui:options:
+        labels:
+          - string
+          - int
+    nullable: false
+  - handle: outputFormat
+    json_schema:
+      type: string
+    value: YYYY-MM-DD HH:mm:ss Z
+    nullable: false
+  - handle: parseToUTC
+    json_schema:
+      type: boolean
+    value: true
+outputs_def:
+  - handle: output
+    json_schema:
+      type: string
+  - handle: year
+    json_schema:
+      type: number
+  - handle: monthNumber
+    json_schema:
+      type: number
+  - handle: month
+    json_schema:
+      type: string
+  - handle: day
+    json_schema:
+      type: number
+    nullable: false
+  - handle: dayOfWeek
+    json_schema:
+      type: string
+  - handle: hour
+    json_schema:
+      type: number
+    nullable: false
+  - handle: minute
+    json_schema:
+      type: number
+    nullable: false
+  - handle: second
+    json_schema:
+      type: number
+    nullable: false
+  - handle: millisecond
+    json_schema:
+      type: number
+    nullable: false
+title: Date format
+ui:
+  default_width: 589.8467125163505
